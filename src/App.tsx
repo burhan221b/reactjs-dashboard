@@ -1,14 +1,12 @@
 import React from 'react';
+import Dashboard from './Dashboard';
 import './styles/App.scss';
 
 const App = () => {
     return (
-        <div className="App">
-            <div className="App-header">
-                {console.log("RENDER")}
-                <h2>Welcome to React using TypeScript and Webpack created by Burhan</h2>
-            </div>
-        </div>
+        <React.Fragment>
+            <Dashboard />
+        </React.Fragment>
     )
 }
 
