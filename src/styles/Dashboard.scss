@@ -21,7 +21,7 @@
 #dashboard-nav-side {
     // font-size: 1.5rem;
     font-size: 1.2rem;
-    color: rgb(41, 40, 40);
+    color: rgb(41, 40, 40) !important;
     // width: 70%;
     width: 300px;
     position: fixed;
@@ -60,6 +60,11 @@ ul.dashboard-nav-side-main-topics {
     justify-content: space-evenly;
 }
 
+ul.dashboard-nav-side-main-topics li.active {
+    transition: 100ms ease-in-out;
+    border-bottom: 2px solid rgba(146, 146, 146, 0.2);
+}
+
 #dashboard-nav-side-profile {
     align-self: center;
 }
@@ -76,6 +81,14 @@ ul.dashboard-nav-side-main-topics {
     border-radius: 50%;
 }
 
+#dashboard-nav-side-profile-name {
+    padding: 1rem;
+
+    a {
+        color: rgb(41, 40, 40) !important;
+    }
+}
+
 ul.dashboard-nav-side-main-topics li {
     // padding: 0.5rem;
     // &:hover {
@@ -87,6 +100,10 @@ nav .version {
     font-size: 0.5rem;
     color: rgba(185, 178, 178, 0.8);
     align-self: center;
+}
+
+nav ul li a {
+    color: rgb(41, 40, 40) !important;
 }
 
 nav .nav-html-icons {

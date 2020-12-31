@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useRouteMatch } from 'react-router-dom';
 import DashboardMainContent from './components/DashboardMainContent';
 import DashboardSideNav from './components/DashboardSideNav';
 import DashboardTopNav from './components/DashboardTopNav';
@@ -8,6 +9,11 @@ export interface DashboardProps {
 }
 
 const Dashboard: React.FunctionComponent<DashboardProps> = () => {
+    const routeMatch = useRouteMatch()
+    useEffect(() => {
+        return () => {
+        }
+    }, [routeMatch])
     return (<>
         {/* Contains whole page */}
         <div className="grid" id="dashboard">

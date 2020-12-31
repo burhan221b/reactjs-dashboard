@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export interface DashboardProfileProps {
 
@@ -11,7 +12,9 @@ const DashboardProfile: React.FunctionComponent<DashboardProfileProps> = () => {
                 <h1>BA</h1>
                 {/* <img id="dashboard-nav-side-img" src="#" /> */}
             </div>
-            <div id="dashboard-nav-side-name">PROFILE</div>
+            <div id="dashboard-nav-side-profile-name">
+                <Link to={`#`}>First Middle Last</Link>
+            </div>
         </div>
     );
 }
