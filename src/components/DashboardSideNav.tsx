@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import DashboardProfile from './DashboardProfile';
 import Version from './Version';
-import { closeSideNav } from '../utils/utils';
+import { closeSideNav, removeOverlay } from '../utils/utils';
 
 export interface DashboardSideNavProps {
 
@@ -10,6 +10,7 @@ export interface DashboardSideNavProps {
 const DashboardSideNav: React.FunctionComponent<DashboardSideNavProps> = () => {
     useEffect(() => {
         closeSideNav()
+        removeOverlay()
         return () => {
 
         }

@@ -8,8 +8,8 @@ export interface DashboardProps {
 }
 
 const Dashboard: React.FunctionComponent<DashboardProps> = () => {
-    return (
-        // Contains whole page
+    return (<>
+        {/* Contains whole page */}
         <div className="grid" id="dashboard">
             {/* Top Nav with Burger Menu Bars */}
             <DashboardTopNav />
@@ -18,7 +18,8 @@ const Dashboard: React.FunctionComponent<DashboardProps> = () => {
             {/* Main Content */}
             <DashboardMainContent />
         </div>
-    );
+        <div className="overlay"></div>
+    </>);
 }
 Dashboard.displayName = 'Dashboard'
 export default Dashboard;
