@@ -1,12 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import DashboardProfile from './DashboardProfile';
 import Version from './Version';
+import { closeSideNav } from '../utils/utils';
 
 export interface DashboardSideNavProps {
 
 }
 
 const DashboardSideNav: React.FunctionComponent<DashboardSideNavProps> = () => {
+    useEffect(() => {
+        closeSideNav()
+        return () => {
+
+        }
+    }, [])
     return (
         <nav id="dashboard-nav-side">
             {/* Close Side Nav */}
